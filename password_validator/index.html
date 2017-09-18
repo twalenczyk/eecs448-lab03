@@ -6,6 +6,7 @@
 	<head>
 		<title> Password Validator </title>
         <script type="text/javascript" src="functions.js"></script>
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
 	</head>
 
 	<body>
@@ -18,13 +19,13 @@
             </br>
             <button type="button" onclick="validatePasswords()">Validated</button>
         </form>
-        <p id="length_error" style="visibility:hidden">
+        <p id="length_error" class="error">
             The password must be at least 8 characters long.
         </p>
-        <p id="match_error" style="visibility:hidden">
+        <p id="match_error" class="error">
             The entries are not identical.
         </p>
-        <p id="validated" style="visibility:hidden">
+        <p id="validated">
             The password is validated!
         </p>
 	</body>

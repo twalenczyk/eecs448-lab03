@@ -1,2 +1,10 @@
 /* Author: Taylor Walenczyk */
-/* Date Created: 9/18/2017
+/* Date Created: 9/18/2017 */
+
+p {
+    visibility: hidden;
+}
+
+p.error {
+    color: red;
+}

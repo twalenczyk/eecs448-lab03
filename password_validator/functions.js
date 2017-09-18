@@ -8,10 +8,10 @@ var validatePasswords = function() {
 
     if(unverified.length < 8) {
         document.getElementById("length_error").style.visibility="visible"
-        validated = false
+        document.getElementById("validated").style.visibility="hidden"
     } else if(unverified !== verifier) {
         document.getElementById("match_error").style.visibility="visible"
-        validated = false
+        document.getElementById("validated").style.visibility="hidden"
     } else {
         document.getElementById("match_error").style.visibility="hidden"
         document.getElementById("length_error").style.visibility="hidden"
