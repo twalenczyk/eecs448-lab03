@@ -5,6 +5,7 @@
 <html>
 	<head>
 		<title> Password Validator </title>
+        <script type="text/javascript" src="functions.js"></script>
 	</head>
 
 	<body>
@@ -15,7 +16,16 @@
             Verify your password:</br>
             <input type="text" name="password" />
             </br>
-            <input type="submit" value="Validate" />
+            <button type="button" onclick="validatePasswords()">Validated</button>
         </form>
+        <p>
+            The password must be at least 8 characters long.
+        </p>
+        <p>
+            The entries are not identical.
+        </p>
+        <p>
+            The password is validated!
+        </p>
 	</body>
 </html>
