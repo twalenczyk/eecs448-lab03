@@ -4,12 +4,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> Password Validator </title>
+		<title> Slide Show </title>
         <script type="text/javascript" src="functions.js"></script>
         <link href="styles.css" rel="stylesheet" type="text/css"/>
 	</head>
 
 	<body>
-        
+        <img id="course" src="resources/images/el-camaleon.jpg" height="300" width="500">
+        <div id="buttons">
+            <button type="button">Previous</button>
+            <button type="button" onclick="next(document.getElementById('course').src)">Next</button>
+        </div>
 	</body>
 </html>
