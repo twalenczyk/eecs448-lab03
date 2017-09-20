@@ -22,3 +22,17 @@ var next = function(current) {
         document.getElementById("course").src = course[0]
     }
 }
+
+var previous = function(current) {
+    if(current === course[0]) {
+        document.getElementById("course").src = course[4]
+    } else if(current === course[1]) {
+        document.getElementById("course").src = course[0]
+    } else if(current === course[2]) {
+        document.getElementById("course").src = course[1]
+    } else if(current === course[3]) {
+        document.getElementById("course").src = course[2]
+    } else if(current === course[4]) {
+        document.getElementById("course").src = course[3]
+    }
+}
