@@ -16,16 +16,22 @@ var getInput = function() {
     // grab paragraph
     let p = document.getElementById("dummyText")
 
-    // checks for color direction
+    // checks for border color direction
     if(borderRVal != null || borderGVal != null || borderBVal != null) {
         let rgbValue = "rgb(" + borderRVal + ", " + borderGVal + ", " + borderBVal + ")"
         p.style.borderColor = rgbValue
     }
 
     // Change border width
-    if(borderWidth != null) {
+    if(borderWidth != null && borderWidth != "") {
         let bw = "" + borderWidth + "px"
         p.style.borderWidth = bw
-        p.style.borderStyle = "solid" // forec appearance
+        p.style.borderStyle = "solid" // force appearance
+    }
+
+    // check for background color direction
+    if(backgroundRVal != null || backgroundGVal != null || backgroundBVal != null) {
+        let rgbValue = "rgb(" + backgroundRVal + ", " + backgroundGVal + ", " + backgroundBVal + ")"
+        p.style.backgroundColor = rgbValue
     }
 }
