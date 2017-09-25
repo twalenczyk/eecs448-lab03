@@ -9,7 +9,9 @@ var course = [
     "file:///Users/twalen/Desktop/eecs_448/Lab_03/slideshow/resources/images/puakea_golf_course.jpeg"
 ]
 
-var next = function(current) {
+var next = function() {
+    let current = document.getElementById('course').src
+
     if(current === course[0]) {
         document.getElementById("course").src = course[1]
     } else if(current === course[1]) {
@@ -23,7 +25,9 @@ var next = function(current) {
     }
 }
 
-var previous = function(current) {
+var previous = function() {
+    let current = document.getElementById('course').src
+    
     if(current === course[0]) {
         document.getElementById("course").src = course[4]
     } else if(current === course[1]) {
