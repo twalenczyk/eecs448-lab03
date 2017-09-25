@@ -4,3 +4,9 @@
 p {
     margin: 10%;
 }
+
+span {
+    font-size: 8px;
+    color: red;
+    font-style: italic;
+}
